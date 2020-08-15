@@ -8,18 +8,12 @@
 
         <div class="columns">
           <div class="column">
+            {% for teamMember in site.data.team %}
             <div class="tile is-ancestor is-vertical">
               <div class="tile is-parent">
                 <a name="stephan"></a>
                 <div>
-                  {% include speaker-card.html avatarurl="stephan.png"
-                  profilename="Stephan Heunis" affiliation="Eindhoven University
-                  of Technology" city="Eindhoven, The Netherlands"
-                  homepage="https://www.fmrwhy.com/"
-                  git="https://github.com/jsheunis/"
-                  twitter="https://www.twitter.com/fmrwhy"
-                  researchgate="https://www.researchgate.net/profile/Stephan_Heunis2"
-                  %}
+                  {% include speaker-card.html data=teamMember%}
                 </div>
               </div>
 
@@ -54,6 +48,7 @@
                 </div>
               </div>
             </div>
+            {% endfor %}
           </div>
 
           <div class="column">
