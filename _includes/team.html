@@ -1,11 +1,65 @@
 <html>
   <body>
     <section id="team" class="team">
-
       <div class="container">
+        <a name="top"></a>
 
         <h1 class="title">Organizing committee</h1>
 
+        <div class="columns">
+          <div class="column">
+            <div class="tile is-ancestor is-vertical">
+              <div class="tile is-parent">
+                <a name="stephan"></a>
+                <div>
+                  {% include speaker-card.html avatarurl="stephan.png"
+                  profilename="Stephan Heunis" affiliation="Eindhoven University
+                  of Technology" city="Eindhoven, The Netherlands"
+                  homepage="https://www.fmrwhy.com/"
+                  git="https://github.com/jsheunis/"
+                  twitter="https://www.twitter.com/fmrwhy"
+                  researchgate="https://www.researchgate.net/profile/Stephan_Heunis2"
+                  %}
+                </div>
+              </div>
+
+              <hr class="dropdown-divider" />
+
+              <div class="tile is-child">
+                <button class="accordion">
+                  <i class="fas fa-id-card bio-button"></i>
+                  &nbsp;&nbsp;Bio
+                </button>
+                <div class="panel">
+                  <p align="justify">
+                    <br />Stephan is a researcher and PhD candidate at the
+                    Electrical Engineering Department of the Eindhoven
+                    University of Technology in the Netherlands. His research
+                    focuses on developing new acquisition and signal processing
+                    methods for functional neuroimaging that allow the real-time
+                    tracking and visualisation of distributed MRI brain activity
+                    patterns. Stephan is passionate about making research and
+                    scientific practice more transparent, rigorous, and
+                    inclusive. He started the
+                    <a href="https://osceindhoven.github.io/"
+                      >Open Science Community Eindhoven</a
+                    >, which is part of a wide Dutch network of researchers and
+                    university employees that focuses on improving scientific
+                    practice. He is also the founder of
+                    <a href="https://openmrbenelux.github.io/">OpenMR Benelux</a
+                    >, a community working on wider adoption of open science
+                    principles in MRI research through talks, discussions,
+                    workshops, and hackathons.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            Second column
+          </div>
+        </div>
 
         <div style="overflow-x: auto;">
           <table border="0" cellpadding="0 15px 0 15px;">
