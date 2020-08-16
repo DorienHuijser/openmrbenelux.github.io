@@ -1,0 +1,62 @@
+# - day:
+#   date:
+#   speakers:
+#     - name: 
+#       image: 
+#       affiliation:
+#         - 
+#       city: 
+#       homepage: 
+#       git:
+#       twitter:
+#       researchgate:
+#       bio: 
+#       abstract:
+#         title: 
+#         content: 
+
+- day:
+  date: Tuesday, 21 January 2020
+  speakers:
+    - name: Marjan Bakker
+      image: marjan.png
+      affiliation:
+        - Tilburg School of Social and Behavioral Sciences <br>Department of Methodology
+          and Statistics <br>Tilburg University
+      city: Tilburg, The
+        Netherlands
+      homepage: http://www.marjanbakker.eu/
+      git:
+      twitter:
+      researchgate:
+      bio: Marjan Bakker is an assistant professor at the Methods
+        and Statistics Department at Tilburg University. She is part
+        of the Meta-Research Center in Tilburg at which they study
+        the scientific system in psychology; in general to find its
+        flaws and empirically test potential solutions. She wants to
+        improve science by investigating problems and possible
+        solutions. Her interests consist of reporting errors, the
+        use of questionable research practices, statistical power,
+        outliers in data, publication bias, and preregistration.
+        Currently, she is mainly working on some larger projects on
+        preregistration and on a project to replicate Mahoney’s
+        seminal study on publication bias (for which she got an NWO
+        replication grant).
+      abstract:
+        title: Diving Into Metascience – Doing Research on Research
+        content: Marjan Bakker will build her talk around the
+          replication crisis in science. She will show examples of
+          p-hacking and will discuss the surprising fraction of
+          confirmed hypotheses. This is not only a problem in
+          psychology attested by examples of failure to replicate
+          studies in other fields. She pleads for preregistration of
+          hypothesis, study-design, and analysis plan to minimize the
+          researcher’s degrees of freedom
+
+- day:
+  date: Wednesday, 22 January 2020
+  speakers:
+
+- day:
+  date: Thursday, 23 January 2020
+  speakers:
