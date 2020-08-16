@@ -38,178 +38,33 @@
 
         <h1 class="title">Advisors</h1>
 
-        <div style="overflow-x: auto;">
-          <table border="0" cellpadding="0 15px 0 15px;">
-            <tr>
-              <td width="500px" align="left" valign="center">
-                <a name="daniele"></a>
-                {% include speaker-card.html avatarurl="daniele.png"
-                profilename="Daniele Marinazzo" affiliation="Department of Data
-                Analysis <br />Faculty of Psychology and Educational Sciences
-                <br />Ghent University" city="Ghent, Belgium"
-                homepage="http://users.ugent.be/~dmarinaz/"
-                twitter="https://twitter.com/dan_marinazzo"
-                git="https://github.com/danielemarinazzo"
-                researchgate="https://www.researchgate.net/profile/Daniele_Marinazzo"
-                %}
-              </td>
-              <td width="500px" align="left" valign="center">
-                <a name="natalia"></a>
-                {% include speaker-card.html avatarurl="natalia.png"
-                profilename="Natalia Bielczyk" affiliation="Founder, Director
-                and Chairperson Stichting Solaris Onderzoek en Ontwikkeling
-                <br />
-                <br />
-                eLife Associate <br />
-                <br />
-                Career Development and Mentoring Manager Organization for Human
-                Brain Mapping" homepage="https://www.nataliabielczyk.com/"
-                twitter="https://www.twitter.com/nbielczyk_neuro"
-                researchgate="https://www.researchgate.net/profile/Natalia_Bielczyk2"
-                %}
-              </td>
-            </tr>
-            <tr>
-              <td width="500px">
-                <button class="accordion">
-                  <i
-                    class="fas fa-id-card"
-                    style="
-                      position: relative;
-                      top: -5px;
-                      text-indent: 0px;
-                      vertical-align: middle;
-                      color: white;
-                    "
-                  ></i
-                  >&nbsp;&nbsp;Bio
-                </button>
-                <div class="panel">
-                  <p align="justify" style="font-family: arial;">
-                    <br />Daniele Marinazzo is an associate professor in the
-                    Department of Data Analysis of the Faculty of Psychology and
-                    Educational Sciences at Ghent University. His team focuses
-                    on methodological and computational aspects of neuroscience
-                    research, and on the dynamical networks subserving function,
-                    as well as thorough statistical validation of the results.
-                    They develop new techniques for inferring connectivity
-                    architectures from the dynamics of the recorded data, in
-                    challenging cases of short, noisy and redundant time series,
-                    as those encountered in neuroimaging. Daniele cares about
-                    open science and ways to improve the review/editorial
-                    process. He is an editor at several journals in his field,
-                    including PLOS Computational Biology, PLOS One, NeuroImage,
-                    Brain Topography, Network Neuroscience. Visit Daniele’s
-                    <a
-                      href="https://publons.com/researcher/663417/daniele-marinazzo"
-                      >Publons review profile</a
-                    >
-                    for more.
-                  </p>
-                </div>
-              </td>
-              <td width="500px">
-                <button class="accordion">
-                  <i
-                    class="fas fa-id-card"
-                    style="
-                      position: relative;
-                      top: -5px;
-                      text-indent: 0px;
-                      vertical-align: middle;
-                      color: white;
-                    "
-                  ></i
-                  >&nbsp;&nbsp;Bio
-                </button>
-                <div class="panel">
-                  <p align="justify" style="font-family: arial;">
-                    <br />Natalia Bielczyk has a background in Physics,
-                    Mathematics and Psychology (3 x MSc), obtained at the
-                    College of Interfaculty Studies in Mathematics and Natural
-                    Sciences, University of Warsaw. She is now completing her
-                    thesis within the Donders Graduate School, Donders Institute
-                    for Brain, Cognition and Behavior, Nijmegen, the
-                    Netherlands. Her research concerns developing new methods
-                    for connectomics in the domain of cognitive neuroimaging,
-                    i.e. for functional and effective connectivity research.
-                    Natalia also currently holds a position of a Career
-                    Development and Mentoring Manager within the
-                    <a href="https://www.ohbmtrainees.com/"
-                      >Organization for Human Brain Mapping Student and Postdoc
-                      Special Interest Group</a
-                    >, and serves as an eLife Associate within the
-                    <a
-                      href="https://elifesciences.org/inside-elife/a946c355/elife-community-ambassadors-243-volunteers-join-the-programme-in-2019"
-                      >eLife Ambassadors community</a
-                    >. In private, she is also a dedicated
-                    <a href="https://www.nataliabielczyk.com/">blogger</a>, and
-                    a speaker, giving workshops and talks about self-development
-                    in academia and transitions to industry. In November 2018,
-                    she founded Stichting Solaris Onderzoek en Ontwikkeling in a
-                    response to lack of assistance for early career researchers
-                    in career development in academia and beyond.
-                  </p>
-                </div>
-              </td>
-            </tr>
+        {% for advisor in site.data.advisors %}
 
-            <tr>
-              <td width="500px" align="left" valign="center">
-                <a name="tim"></a>
-                {% include speaker-card.html avatarurl="tim.png"
-                profilename="Tim van Mourik" affiliation="Donders Institute for
-                Brain, Cognition and Behaviour" city="Nijmegen, The Netherlands"
-                homepage="https://timvanmourik.com/"
-                twitter="https://twitter.com/tim_van_mourik?lang=nl"
-                git="https://github.com/TimVanMourik"
-                researchgate="https://www.researchgate.net/profile/Tim_Van_Mourik"
-                %}
-              </td>
-            </tr>
-            <tr>
-              <td width="500px">
-                <button class="accordion">
-                  <i
-                    class="fas fa-id-card"
-                    style="
-                      position: relative;
-                      top: -5px;
-                      text-indent: 0px;
-                      vertical-align: middle;
-                      color: white;
-                    "
-                  ></i
-                  >&nbsp;&nbsp;Bio
-                </button>
-                <div class="panel">
-                  <p align="justify" style="font-family: arial;">
-                    <br />Tim van Mourik is a PostDoc at the Donders Centre for
-                    Cognitive Neuroimaging. During his PhD he developed analysis
-                    tools to analyse fMRI scans at an even finer level of
-                    detail: that of the cortical layers. In doing so, he not
-                    only developed the new tools for obtaining laminar signals,
-                    but also applications to build graphical pipelines with
-                    these tools (<a
-                      href="https://timvanmourik.github.io/Porcupine/"
-                      >Porcupine</a
-                    >). In addition, he set up web applications to facilitate
-                    sharing fMRI results in augmented reality (<a
-                      href="https://armadillo-brain.herokuapp.com"
-                      >ARmadillo</a
-                    >) and improved collaboration on interactive workflows (<a
-                      href="https://giraffe.tools"
-                      >GiraffeTools</a
-                    >). At the OHBM conference 2019, Tim was the chair of the
-                    Open Science Room and in charge of organising a week long
-                    program with talks, discussions, and demos towards open and
-                    reproducible research practices.
-                  </p>
-                </div>
-              </td>
-            </tr>
-          </table>
+        <div class="tile is-ancestor is-vertical is-6">
+          <div class="tile is-parent">
+            <!-- <a name=teamMember.linkName></a> -->
+            {% include speaker-card.html data=advisor%}
+          </div>
+
+          <div class="tile is-child">
+            <hr class="dropdown-divider" />
+          </div>
+
+          <div class="tile is-child">
+            <button class="accordion">
+              <i class="fas fa-id-card bio-button"></i>
+              &nbsp;&nbsp;Bio
+            </button>
+
+            <div class="panel">
+              <p align="justify">
+                {{ advisor.bio }}
+              </p>
+            </div>
+          </div>
         </div>
+
+        {% endfor %}
 
         <img src="../assets/ext_images/post_separator.png" alt="text" />
         <br />
