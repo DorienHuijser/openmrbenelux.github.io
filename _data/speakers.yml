@@ -1,19 +1,19 @@
 # - day:
 #   date:
 #   speakers:
-#     - name: 
-#       image: 
+#     - name:
+#       image:
 #       affiliation:
-#         - 
-#       city: 
-#       homepage: 
+#         -
+#       city:
+#       homepage:
 #       git:
 #       twitter:
 #       researchgate:
-#       bio: 
+#       bio:
 #       abstract:
-#         title: 
-#         content: 
+#         title:
+#         content:
 
 - day:
   date: Tuesday, 21 January 2020
@@ -52,6 +52,51 @@
           studies in other fields. She pleads for preregistration of
           hypothesis, study-design, and analysis plan to minimize the
           researcher’s degrees of freedom
+
+    - name: Cassandra Gould van Praag
+      image: cass.png
+      affiliation:
+        - Psychopharmacology and Emotion Research Laboratory
+          <br />Department of Psychiatry <br />University of Oxford
+      city: Oxford, UK
+      homepage: https://www.psych.ox.ac.uk/team/cassandra-gould-van-praag
+      git: https://github.com/cassgvp
+      twitter: https://twitter.com/cassgvp
+      researchgate: https://www.researchgate.net/profile/Cassandra_Gould_Van_Praag
+      bio: Cass is a postdoctoral researcher at the University of
+        Oxford Department of Psychiatry. She provides support for
+        (f)MRI experimental design and analysis in the investigation
+        of treatments for mood disorders. In this role, she has to
+        stay up to speed with the leading edge of analytic tools,
+        and is constantly on the lookout for tips, tricks, and
+        techniques to make this research quicker, slicker, and more
+        effective. This goes hand-in-hand with making the research
+        more transparent and reproducible, and freely sharing the
+        outputs of our labour. She is a contributor to
+        <a href="https://the-turing-way.netlify.com/introduction/introduction">The Turing Way</a>
+        and works with the
+        <a href="https://www.win.ox.ac.uk/open-neuroimaging/open-neuroimaging-project">
+        Wellcome Centre for Integrative Neuroimaging Open
+        Community Team </a>. She is a passionate believer in accessibility and the
+        equitable dissemination of knowledge, and spends a lot of
+        time showing people that programming isn’t scary.
+      abstract:
+        title: Analytical Flexibility and Questionable Research Practices in MRI
+        content: The number of methods available for MRI
+          analysis is growing every year. Each of these methods
+          requires the specification of a bewildering array of
+          parameters, not all of which are amenable to optimisation by
+          consensus. The combination of these factors leads to an
+          almost infinite number of ways in which we may analyse our
+          data, and accordingly an infinite number of results which we
+          may choose to report, or not. In this talk, I will discuss
+          concerns of such analytic flexibility and the draw of
+          questionable research practices to help uncover the
+          "publishable story" in our data. I will present recent
+          developments in our discipline which may assist the
+          identification of robust effects, and what individual
+          actions we may take in order to retain confidence in our own
+          findings.
 
 - day:
   date: Wednesday, 22 January 2020
