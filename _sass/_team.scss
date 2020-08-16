@@ -1,11 +1,14 @@
 .team {
-  .title{
-    color: #004777
-  }
   img {
     width: 30%;
     height: auto;
     display: inline-block;
+  }
+  p{
+    align: justify;
+  }
+  .title{
+    color: #004777
   }
   .accordion:after {
     content: "\002B"; /* Unicode character for "plus" sign (+) */
