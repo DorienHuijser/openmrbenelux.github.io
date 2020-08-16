@@ -8,8 +8,7 @@
     style="background-color: #dbe9f4;"
   >
     <tr>
-      <td align="left" valign="top" height="260px" style="padding-top: 15px;">
-
+      <td align="left" height="260px" style="padding: 20px;">
         <!-- <h3>{{ include.data.name }}</h3> -->
 
         {% if include.data.homepage %}
@@ -18,12 +17,11 @@
             src="/img/speakers/{{ include.data.image }}"
             style="
               border: 2px solid #004777;
-              width: 200px;
               height: 200px;
+              width: 200px;
               border-radius: 50%;
               object-fit: cover;
             "
-            class="responsive"
         /></a>
 
         {% else %}
@@ -31,24 +29,25 @@
           src="/img/speakers/{{ include.data.image }}"
           style="
             border: 2px solid #004777;
-            width: 200px;
             height: 200px;
+            width: 200px;
             border-radius: 50%;
             object-fit: cover;
           "
-          class="responsive"
         />
         {% endif %}
       </td>
 
       <td
         align="left"
-        valign="top"
         height="260px"
-        style="padding-top: 40px; padding-left: 20px;"
+        style="padding: 20px;"
       >
         <h4 style="font-family: monospace;">
-          {{ include.data.name }} {% if include.data.twitter %}
+          {{ include.data.name }} 
+        </h4>
+        <h4>
+        {% if include.data.twitter %}
           <a href="{{ include.data.twitter }}">
             <i class="fab fa-twitter" style="color: #38a1f3;"></i>
           </a>
@@ -62,10 +61,15 @@
           >{% endif %}
         </h4>
 
+        {% for item in include.data.affiliation %}
         <h6>
-          {{ include.data.affiliation }}
+          <i
+            class="fas fa-circle"
+            style="padding-left: 5px; width: 10px; color: black;"
+          ></i>
+          {{ item }}
         </h6>
-        {% if include.data.city %}
+        {% endfor %} {% if include.data.city %}
         <h6>
           <i class="fas fa-map-marker-alt" style="color: red;"></i>
           {{ include.data.city }}

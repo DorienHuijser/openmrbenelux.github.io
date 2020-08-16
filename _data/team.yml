@@ -51,8 +51,10 @@
 - name: Vincenzo Anania
   linkName: vincenzo
   image: vincenzo.jpg
-  affiliation: icometrix, Leuven
-    <br/> imec-Visionlab, University of Antwerp, Antwerp
+  affiliation: 
+    - Icometrix, Leuven
+    - Imec-Visionlab
+    - University of Antwerp, Antwerp
   city: Belgium
   homepage:
   git: https://github.com/vins9100
@@ -69,9 +71,8 @@
 - name: Hannes Almgren
   linkName: hannes
   image: hannes.png
-  affiliation: Department of Data Analysis
-    <br/> Faculty of Psychology and Educational Sciences
-    <br/> Ghent University
+  affiliation: 
+    - Department of Data Analysis <br> Faculty of Psychology and Educational Sciences <br> Ghent University
   city: Ghent, Belgium
   homepage:
   git: https://github.com/halmgren
@@ -89,10 +90,8 @@
 
 - name: Sofie Van Den Bossche
   image: sofie.png
-  affiliation: Department of
-    Data Analysis <br />
-    Faculty of Psychology and Educational Sciences <br />
-    Ghent University
+  affiliation:
+    - Department of Data Analysis <br> Faculty of Psychology and Educational Sciences <br> Ghent University
   city: Ghent, Belgium
   homepage:
   git: https://github.com/sofievdbos

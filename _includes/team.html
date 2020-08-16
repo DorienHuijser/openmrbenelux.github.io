@@ -8,7 +8,12 @@
 
         {% for teamMember in site.data.team %}
 
-        <div class="tile is-ancestor is-vertical is-6">
+        {% if forloop.index | modulo: 2 == 1 %}
+        {% elsif forloop.index | modulo: 2 == 0 %}
+        {% endif %}
+
+        <div class="tile is-vertical is-ancestor is-6">
+
           <div class="tile is-parent">
             <!-- <a name=teamMember.linkName></a> -->
             {% include speaker-card.html data=teamMember%}
