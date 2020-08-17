@@ -1,42 +1,45 @@
+
+
 <html>
   <body>
+
     <section id="speakers" class="speakers">
       <div class="container">
         <a name="top"></a>
 
         {% for day in site.data.speakers %}
-
+    
         <h2 style="color: #004777;">{{ day.date }}</h2>
-
+    
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-6 is-parent">
             {% for speaker in day.speakers %}
-
+    
             <div class="tile is-child box">
               <div class="tile is-child">
                 <!-- <a name=teamMember.linkName></a> -->
                 {% include speaker-card.html data=speaker%}
               </div>
-
+    
               <div class="tile is-child">
                 <button class="accordion">
                   <i class="fas fa-id-card bio-button"></i>
                   &nbsp;&nbsp;Bio
                 </button>
-
+    
                 <div class="panel">
                   <p>
                     {{ speaker.bio }}
                   </p>
                 </div>
               </div>
-
+    
               <div class="tile is-child">
                 <button class="accordion">
                   <i class="fas fa-id-card bio-button"></i>
                   &nbsp;&nbsp;Abstract
                 </button>
-
+    
                 <div class="panel">
                   <h6>{{ speaker.abstract.title }}</h6>
                   <p>
@@ -45,32 +48,21 @@
                 </div>
               </div>
             </div>
-
+    
             {% endfor %}
           </div>
         </div>
-
+    
         {% endfor %}
-
+    
         <div style="overflow-x: auto;">
           <table border="0" cellpadding="0 15px 0 15px;">
             <tr>
               <td width="500px" align="left" valign="center">
                 <a name="pim"></a>
-                {% include speaker-card.html avatarurl="pim.png"
-                profilename="Pim Pullens" affiliation="Department of Radiology
-                (Ghent University - Ghent University Hospital) and Ghent
-                Institute for Functional and Metabolic Imaging (GIfMI)"
-                city="Ghent, Belgium"
-                twitter="https://www.twitter.com/pim_pullens"
-                researchgate="https://www.researchgate.net/profile/Pim_Pullens"
-                %}
               </td>
               <td width="500px" align="left" valign="center">
                 <a name="dirk"></a>
-                {% include speaker-card.html avatarurl="DirkSmeets.jpg"
-                profilename="Dirk Smeets" affiliation="icometrix" city="Leuven,
-                Belgium" %}
               </td>
             </tr>
             <tr>
@@ -198,25 +190,13 @@
                 </div>
               </td>
             </tr>
-
+    
             <tr>
               <td width="500px" align="left" valign="center">
                 <a name="joao"></a>
-                {% include speaker-card.html avatarurl="Joao.jpg"
-                profilename="João Periquito" affiliation="Berlin Ultrahigh Field
-                Facility (B.U.F.F.)" city="Berlin, Germany" %}
               </td>
               <td width="500px" align="left" valign="center">
                 <a name="daniele"></a>
-                {% include speaker-card.html avatarurl="daniele.png"
-                profilename="Daniele Marinazzo" affiliation="Department of Data
-                Analysis <br />Faculty of Psychology and Educational Sciences
-                <br />Ghent University" city="Ghent, Belgium"
-                homepage="http://users.ugent.be/~dmarinaz/"
-                twitter="https://twitter.com/dan_marinazzo"
-                git="https://github.com/danielemarinazzo"
-                researchgate="https://www.researchgate.net/profile/Daniele_Marinazzo"
-                %}
               </td>
             </tr>
             <tr>
@@ -382,18 +362,10 @@
                 </div>
               </td>
             </tr>
-
+    
             <tr>
               <td width="500px" align="left" valign="center">
                 <a name="kirstie"></a>
-                {% include speaker-card.html avatarurl="kirstie_2.png"
-                profilename="Kirstie Whitaker" affiliation="The Alan Turing
-                Institute" city="London, UK"
-                homepage="https://kirstiewhitaker.com/"
-                twitter="https://twitter.com/kirstie_j"
-                git="https://github.com/KirstieJane"
-                researchgate="https://www.researchgate.net/profile/Kirstie_Whitaker"
-                %}
               </td>
             </tr>
             <tr>
@@ -514,7 +486,7 @@
             </tr>
           </table>
         </div>
-
+    
         <img src="../assets/ext_images/post_separator.png" alt="text" />
         <br />
         <a href="../page-speakers#top"
@@ -529,29 +501,18 @@
             "
           ></i
         ></a>
-
+    
         <h2 style="color: #004777;">Wednesday, 22 January 2020</h2>
-
+    
         <div style="overflow-x: auto;">
           <table border="0" cellpadding="0 15px 0 15px;">
             <tr>
               <td width="500px" align="left" valign="center">
                 <a name="fatma"></a>
-                {% include speaker-card.html avatarurl="FatmaDeniz.jpg"
-                profilename="Fatma Deniz" affiliation="Postdoctoral Fellow,
-                University of California, Berkeley; Visiting Scientist,
-                Technical University Berlin, Germany" city="Berkeley, USA" %}
               </td>
               <td width="500px" align="left" valign="center">
                 <a name="remi"></a>
-                {% include speaker-card.html avatarurl="remi.png"
-                profilename="Remi Gau" affiliation="Université catholique de
-                Louvain" city="Louvain-la-Neuve, Belgium"
-                homepage="https://remi-gau.github.io/"
-                git="https://github.com/Remi-Gau"
-                twitter="https://www.twitter.com/RemiGau"
-                researchgate="https://www.researchgate.net/profile/Remi_Gau" %}
-              </td>
+               </td>
             </tr>
             <tr>
               <td width="500px">
@@ -735,27 +696,13 @@
                 </div>
               </td>
             </tr>
-
+    
             <tr>
               <td width="500px" align="left" valign="center">
                 <a name="sofie"></a>
-                {% include speaker-card.html avatarurl="sofie.png"
-                profilename="Sofie Van Den Bossche" affiliation="Department of
-                Data Analysis <br />
-                Faculty of Psychology and Educational Sciences <br />
-                Ghent University" city="Ghent, Belgium"
-                git="https://github.com/sofievdbos"
-                twitter="https://www.twitter.com/sofie_vdbos"
-                researchgate="https://www.researchgate.net/profile/Sofie_Van_Den_Bossche2"
-                %}
               </td>
               <td width="500px" align="left" valign="center">
                 <a name="serena"></a>
-                {% include speaker-card.html avatarurl="serena.png"
-                profilename="Serena Bonaretti" affiliation="Transparent MSK
-                Research" homepage="https://sbonaretti.github.io/"
-                git="https://github.com/sbonaretti"
-                twitter="https://www.twitter.com/SerenaBonaretti" %}
               </td>
             </tr>
             <tr>
@@ -945,27 +892,13 @@
                 </div>
               </td>
             </tr>
-
+    
             <tr>
               <td width="500px" align="left" valign="center">
                 <a name="lukas"></a>
-                {% include speaker-card.html avatarurl="Lukas_Snoek.png"
-                profilename="Lukas Snoek" affiliation="Department of psychology
-                <br />
-                University of Amsterdam" city="Amsterdam, The Netherlands"
-                git="https://github.com/lukassnoek"
-                twitter="https://www.twitter.com/LukasSnoek"
-                homepage="https://lukas-snoek.com" %}
               </td>
               <td width="500px" align="left" valign="center">
                 <a name="agah"></a>
-                {% include speaker-card.html avatarurl="karakuzu.jpeg"
-                profilename="Agah Karakuzu" affiliation="NeuroPoly Lab Ecole
-                Polytechnique de Montréal" city="Montréal, Canada"
-                git="https://github.com/agahkarakuzu/"
-                twitter="https://www.twitter.com/agahkarakuzu"
-                researchgate="https://www.researchgate.net/profile/Agah_Karakuzu"
-                %}
               </td>
             </tr>
             <tr>
@@ -1137,7 +1070,7 @@
             </tr>
           </table>
         </div>
-
+    
         <img src="../assets/ext_images/post_separator.png" alt="text" />
         <br />
         <a href="../page-speakers#top"
@@ -1152,33 +1085,17 @@
             "
           ></i
         ></a>
-
+    
         <h2 style="color: #004777;">Thursday, 23 January 2020</h2>
-
+    
         <div style="overflow-x: auto;">
           <table border="0" cellpadding="0 15px 0 15px;">
             <tr>
               <td width="500px" align="left" valign="center">
                 <a name="malvika"></a>
-                {% include speaker-card.html avatarurl="Malvika.png"
-                affiliation="European Molecular Biology Laboratory (EMBL)
-                Heidelberg" city="Heidelberg, Germany" profilename="Malvika
-                Sharan" %}
               </td>
               <td width="500px" align="left" valign="center">
                 <a name="natalia"></a>
-                {% include speaker-card.html avatarurl="natalia.png"
-                profilename="Natalia Bielczyk" affiliation="Founder, Director
-                and Chairperson Stichting Solaris Onderzoek en Ontwikkeling
-                <br />
-                <br />
-                eLife Associate <br />
-                <br />
-                Career Development and Mentoring Manager Organization for Human
-                Brain Mapping" homepage="https://www.nataliabielczyk.com/"
-                twitter="https://www.twitter.com/nbielczyk_neuro"
-                researchgate="https://www.researchgate.net/profile/Natalia_Bielczyk2"
-                %}
               </td>
             </tr>
             <tr>
@@ -1329,27 +1246,13 @@
                 </div>
               </td>
             </tr>
-
+    
             <tr>
               <td width="500px" align="left" valign="center">
                 <a name="sarah"></a>
-                {% include speaker-card.html avatarurl="sarah.png"
-                profilename="Sarah Genon" affiliation="Cognitive
-                Neuroinformatics, Institute of Neuroscience and Medicine, Brain
-                & Behaviour" city="Jülich, Germany"
-                homepage="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-7/EN/genon_s.html?nn=654218"
-                researchgate="https://www.researchgate.net/profile/Sarah_Genon"
-                %}
               </td>
               <td width="500px" align="left" valign="center">
                 <a name="lyuba"></a>
-                {% include speaker-card.html avatarurl="zehl.png"
-                profilename="Lyuba Zehl" affiliation="Jülich Research Centre,
-                Institute of Neuroscience and Medicine (INM-1), Jülich, Germany"
-                city="Jülich, Germany" git="https://github.com/lzehl"
-                twitter="https://twitter.com/LyubaZehl"
-                researchgate="https://www.researchgate.net/profile/Lyuba_Zehl"
-                %}
               </td>
             </tr>
             <tr>
@@ -1505,21 +1408,13 @@
                 </div>
               </td>
             </tr>
-
+    
             <tr>
               <td width="500px" align="left" valign="center">
                 <a name="stephanklein"></a>
-                {% include speaker-card.html avatarurl="stefan.jpg"
-                profilename="Stefan Klein" affiliation="Biomedical Imaging Group
-                Rotterdam - Eramus Medical Center" city="Rotterdam, The
-                Netherlands" homepage="http://bigr.nl/people/StefanKlein/" %}
               </td>
               <td width="500px" align="left" valign="center">
                 <a name="marcel"></a>
-                {% include speaker-card.html avatarurl="Marcel.png"
-                affiliation="Donders Institute for Brain, Cognition and
-                Behaviour" city="Nijmegen, The Netherlands" profilename="Marcel
-                Zwiers" %}
               </td>
             </tr>
             <tr>
@@ -1641,27 +1536,13 @@
                 </div>
               </td>
             </tr>
-
+    
             <tr>
               <td width="500px" align="left" valign="center">
                 <a name="robert"></a>
-                {% include speaker-card.html avatarurl="Robert.png"
-                affiliation="Donders Institute for Brain, Cognition and
-                Behaviour" city="Nijmegen, The Netherlands"
-                homepage="https://robertoostenveld.nl/research/"
-                profilename="Robert Oostenveld" %}
               </td>
               <td width="500px" align="left" valign="center">
                 <a name="tim"></a>
-                {% include speaker-card.html avatarurl="tim.png"
-                profilename="Tim van Mourik" affiliation="Donders Institute for
-                Brain, Cognition and Behaviour"
-                homepage="https://timvanmourik.com/" city="Nijmegen, The
-                Netherlands"
-                twitter="https://twitter.com/tim_van_mourik?lang=nl"
-                git="https://github.com/TimVanMourik"
-                researchgate="https://www.researchgate.net/profile/Tim_Van_Mourik"
-                %}
               </td>
             </tr>
             <tr>
@@ -1794,25 +1675,13 @@
                 </div>
               </td>
             </tr>
-
+    
             <tr>
               <td width="500px" align="left" valign="center">
                 <a name="tony"></a>
-                {% include speaker-card.html avatarurl="tony.png"
-                profilename="Tony Stöcker" git="
-                https://github.com/JEMRIS/jemris" affiliation="MR physics group
-                German Center for Neurodegenerative Diseases" city="Bonn,
-                Germany"
-                homepage="http://www.dzne.de/en/sites/bonn/research-groups/stoecker.html"
-                researchgate="https://www.researchgate.net/profile/Tony_Stoecker"
-                %}
               </td>
               <td width="500px" align="left" valign="center">
                 <a name="oliver"></a>
-                {% include speaker-card.html avatarurl="oli.jpg"
-                profilename="Oliver Schmid" affiliation="EPFL (École
-                politechnique fédérale de Lausanne), Switzerland" city =
-                "Lausanne, Switzerland" %}
               </td>
             </tr>
             <tr>
@@ -1940,18 +1809,10 @@
                 </div>
               </td>
             </tr>
-
+    
             <tr>
               <td width="500px" align="left" valign="center">
                 <a name="stephan"></a>
-                {% include speaker-card.html avatarurl="stephan.png"
-                profilename="Stephan Heunis" affiliation="Eindhoven University
-                of Technology" city="Eindhoven, The Netherlands"
-                homepage="https://www.fmrwhy.com/"
-                git="https://github.com/jsheunis/"
-                twitter="https://www.twitter.com/fmrwhy"
-                researchgate="https://www.researchgate.net/profile/Stephan_Heunis2"
-                %}
               </td>
             </tr>
             <tr>
@@ -2035,7 +1896,7 @@
             </tr>
           </table>
         </div>
-
+    
         <img src="../assets/ext_images/post_separator.png" alt="text" />
         <br />
         <a href="../page-speakers#top"
@@ -2052,17 +1913,17 @@
         ></a>
       </div>
     </section>
-
+    
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
-
+    
       for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
           /* Toggle between adding and removing the "active" class,
     to highlight the button that controls the panel */
           this.classList.toggle("active");
-
+    
           /* Toggle between hiding and showing the active panel */
           var panel = this.nextElementSibling;
           if (panel.style.display === "block") {
